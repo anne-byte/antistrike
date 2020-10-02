@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Todos from './employees';
+import Employees from './employees';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 
@@ -11,7 +10,7 @@ ReactDOM.render(
     <Router>
       <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand">Codex</a>
+          <a class="navbar-brand" href="#">Codex</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,12 +18,12 @@ ReactDOM.render(
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-          <Link className="nav-link">Employees</Link>
+          <Link className="nav-link" to="/">Employees</Link>
           </li>
           </ul>
           </div>
         </nav>
-        <Switch><Route path="/"><Todos /></Route></Switch>
+        <Switch><Route path="/"><Employees /></Route></Switch>
       </div>
     </Router>
   </React.StrictMode>,
