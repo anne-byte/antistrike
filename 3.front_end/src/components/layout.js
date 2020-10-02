@@ -8,11 +8,9 @@ const styles = {
     display: 'flex'
   },
   left: {
-    border: '1px solid black',
     flex: 1
   },
   right: {
-    border: '1px solid black',
     flex: 2
   }
 };
